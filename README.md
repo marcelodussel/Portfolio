@@ -42,7 +42,23 @@ Each campaign issues its own ERC-20 compliant shadowToken, representing the inve
   - Handles payments in a designated ERC-20 token, with price conversion logic.
   - Centralized withdrawal wallet for collected funds.
 ---
+#### 3️⃣ NFT Campaign Router
+This smart contract extends the campaign management concept into the NFT space.
+Each campaign is represented by a custom collection (CampaignNFT), which can be created, priced, and managed directly by the Router.
+Buyers purchase campaign NFTs using a predefined ERC-20 token (e.g., USDT), and the Router automatically mints tokens to the buyer’s wallet.
 
+- **Files:**  
+  - `ReceivablesAnticipation/CampaignNFT.sol` — ERC-721 NFT representing ownership in a specific receivable campaign.
+  - `ReceivablesAnticipation/IRepToken.sol` — Interface for the receivable representation token.
+  - `ReceivablesAnticipation/RepToken.sol` — ERC-20 token representing a receivable asset.
+  - `ReceivablesAnticipation/Router721.sol` — Manages campaigns that issue ERC-721 NFTs.
+  - `ReceivablesAnticipation/Router1155.sol` — Manages campaigns that issue ERC-1155 tokens.
+- **Highlights:**  
+  - Creates and manages multiple NFT-based sale campaigns.
+  - Supports campaign metadata updates (price, base URI, wallet address).
+  - Allows both single and bulk NFT purchases using an ERC-20 token (e.g., USDT).
+  - Includes token distribution functions to NFT holders, with optional ID range targeting.
+---
 
 ## 📫 Contact
 - **LinkedIn:** [linkedin.com/in/marcelodussel](https://linkedin.com/in/marcelodussel)
