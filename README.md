@@ -59,6 +59,20 @@ Buyers purchase campaign NFTs using a predefined ERC-20 token (e.g., USDT), and 
   - Allows both single and bulk NFT purchases using an ERC-20 token (e.g., USDT).
   - Includes token distribution functions to NFT holders, with optional ID range targeting.
 ---
+#### 4️⃣ Token Vesting
+The keepVesting smart contract manages the sale and time-locked distribution of Keep Token across multiple allocation categories, ensuring controlled token release according to predefined cliffs and vesting schedules.
+It supports both on-chain purchases using BUSD and off-chain allocations (e.g., PIX), with configurable admin roles for distribution management.
+
+- **Files:**  
+  - `KeepToken/keepVesting.sol` — Handles token vesting for Seed Sale, Private Sale, Advisors, and Airdrop, integrating payment in BUSD and periodic vesting release in Keep Token.
+- **Highlights:**  
+  - Four independent vesting categories, each with custom cliff, TGE percentage, and monthly vesting rate.
+  - On-chain purchase functions with BUSD payment and off-chain admin allocations.
+  - Token Generation Event (TGE) logic for initial unlock, followed by monthly parcel-based vesting.
+  - Admin-controlled monthly distribution of vested tokens to all participants.
+  - Sales cap enforcement per category with minimum purchase limits.
+  - Owner and admin role separation for secure operations.
+---
 
 ## 📫 Contact
 - **LinkedIn:** [linkedin.com/in/marcelodussel](https://linkedin.com/in/marcelodussel)
