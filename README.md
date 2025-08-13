@@ -77,11 +77,11 @@ It supports both on-chain purchases using BUSD and off-chain allocations (e.g., 
 This NFT ecosystem consists of multiple ERC-721 collections and utility contracts, all designed to be fully compatible with OpenSea’s metadata and trading standards at the time of development. Each collection features unique thematic artwork, on-chain minting logic, and optional claiming mechanics for holders.
 
 - **Files:**  
-  - `NFTs/Airdrop.sol` — Handles airdropping of NFTs to predefined addresses, ensuring cost-efficient distribution and OpenSea metadata compliance.
-  - `NFTs/Dalmatians.sol` — Core ERC-721 collection for the “Dalmatians” series, with on-chain minting, supply caps, and standard marketplace integration.
-  - `NFTs/DeadBirds.sol` — ERC-721 “Dead Birds” collection.
-  - `NFTs/HolderClaim.sol` — Enables eligible NFT holders to claim special edition tokens or companion NFTs without payment.
-  - `NFTs/InfectedDalmatians.sol` — Themed ERC-721 collection expanding on the Dalmatians series with its own minting logic.
+  - `NFTsEcosystem/Airdrop.sol` — Handles airdropping of NFTs to predefined addresses, ensuring cost-efficient distribution and OpenSea metadata compliance.
+  - `NFTsEcosystem/Dalmatians.sol` — Core ERC-721 collection for the “Dalmatians” series, with on-chain minting, supply caps, and standard marketplace integration.
+  - `NFTsEcosystem/DeadBirds.sol` — ERC-721 “Dead Birds” collection.
+  - `NFTsEcosystem/HolderClaim.sol` — Enables eligible NFT holders to claim special edition tokens or companion NFTs without payment.
+  - `NFTsEcosystem/InfectedDalmatians.sol` — Themed ERC-721 collection expanding on the Dalmatians series with its own minting logic.
 - **Highlights:**  
   - Full ERC-721 compliance with OpenSea’s token metadata and trading standards.
   - Multiple interconnected NFT collections, each with independent supply limits.
